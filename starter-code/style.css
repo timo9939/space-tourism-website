@@ -3,6 +3,17 @@
     margin: 0;
 }
 
+img{
+max-width: 100%;
+width: cover;
+background-repeat:none;
+}
+
+
 nav{
     background-color: antiquewhite;
+}
+
+body{
+    background-image: url(./assets/home/background-home-desktop.jpg);
 }
