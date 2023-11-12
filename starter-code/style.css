@@ -15,6 +15,9 @@ ul{
     list-style: none;
 }
 
+button{
+    cursor: pointer;
+}
 
 /* CSS Reset end */
 /* Nav Header */
@@ -69,9 +72,13 @@ padding: 5vw;
     position: absolute;
     top: 60%;
     left: 65%;
-    padding: 5rem;
+    width: 15rem;
+    height: 15rem;
+    padding: 1rem; /* Adjust padding as needed */
 
     color: black;
     font-size: 50px;
-    border-radius: 150rem;
+    border-radius: 50%;
+
+
 }
