@@ -1,19 +1,77 @@
+/* CSS Reset */
 *{
     box-sizing: border-box;
     margin: 0;
+    color: aliceblue;
 }
 
 img{
 max-width: 100%;
-width: cover;
-background-repeat:none;
+background-size: cover;
+background-repeat:no-repeat;
 }
 
+ul{
+    list-style: none;
+}
+
+
+/* CSS Reset end */
+/* Nav Header */
+
+header{
+width: 90vw;
+
+    position: absolute;
+    top: 8vh;
+left: 5vw;
+
+    display: flex;
+    justify-content: space-between;
+}
 
 nav{
-    background-color: antiquewhite;
+    background-color: rgba(128, 128, 128, 0.6620);
+    display: flex; 
 }
 
+nav ul{
+   display: flex; 
+ gap: 1em;
+  
+}
+
+nav ul li{
+
+}
+
+/* Nav Header end*/
 body{
     background-image: url(./assets/home/background-home-desktop.jpg);
+}
+
+.home-introduction{
+    display: grid;
+    grid-template-rows: repeat(1fr,3);
+    row-gap: 3vw;
+
+    position: absolute;
+    top: 50vh;
+    width: 30%;
+    
+    left: 10vw;
+background: rgba(254, 253, 253, 0.263);
+
+padding: 5vw;
+}
+
+.home-explore-btn{
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    padding: 5rem;
+
+    color: black;
+    font-size: 50px;
+    border-radius: 150rem;
 }
