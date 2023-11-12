@@ -1,9 +1,15 @@
 /* CSS Reset */
+
+  @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@100;200;300;400;500;600;700;800&display=swap');
+/*     font-family: 'Trispace', sans-serif; */
 *{
     box-sizing: border-box;
     margin: 0;
     color: aliceblue;
+   font-family: 'Trispace', sans-serif;;
 }
+
+
 
 img{
 max-width: 100%;
@@ -51,26 +57,57 @@ nav ul li{
 /* Nav Header end*/
 body{
     background-image: url(./assets/home/background-home-desktop.jpg);
+    border: solid red 5px;
+    height: max-content;
+    z-index: 3;
+}
+
+main{
+    border: solid blue 5px;
+    height: max-content;
+    z-index: 4;
 }
 
 .home-introduction{
+    border: solid white 1px;
     display: grid;
     grid-template-rows: repeat(1fr,3);
     row-gap: 3vw;
 
     position: absolute;
-    top: 50vh;
-    width: 30%;
+    top: 30vh;
+    width: fit-content;
     
     left: 10vw;
 background: rgba(254, 253, 253, 0.263);
 
-padding: 5vw;
+padding: 5vw 5vw 3vw 5vw;
+
+margin-bottom: 5vh;
+}
+
+.home-introduction h2{
+     font-family: 'Trispace', sans-serif;
+     font-weight: 500;
+}
+
+.home-introduction h1{
+    font-family: 'Trispace', sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.home-introduction p {
+    width: 40ch;
+    font-family: 'Trispace', sans-serif;
+    font-weight: 100;
+    line-height: 1.5rem;
+
 }
 
 .home-explore-btn{
     position: absolute;
-    top: 60%;
+    top: 40%;
     left: 65%;
     width: 15rem;
     height: 15rem;
@@ -81,4 +118,10 @@ padding: 5vw;
     border-radius: 50%;
 
 
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0%;
 }
