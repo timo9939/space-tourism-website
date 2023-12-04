@@ -1,38 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title> Space tourism website</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <title>Space tourism website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./destination.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">00 Home</a></li>
+        <li><a href="./destination-moon.html">01 Destination</a></li>
+        <li><a href="./crew-commander.html">02 Crew</a></li>
+        <li><a href="./technology-spaceport.html">03 Technology</a></li>
+      </ul>
+    </nav>
 
-  01 Pick your destination
+    <h3>01 Pick your destination</h3>
 
-  Moon
-  Mars
-  Europa
-  Titan
+    <section class="main-section">
+      <img src="./assets/destination/image-titan.png" alt="Moon" />
 
-  Titan
+      <article class="description-container">
+        <nav>
+          <ul>
+            <li><a href="./destination-mars.html">Mars</a></li>
+            <li><a href="./destination-europa.html">Europa</a></li>
+            <li><a href="./destination-moon.html">Moon</a></li>
+          </ul>
+        </nav>
 
-  The only moon known to have a dense atmosphere other than Earth, Titan 
-  is a home away from home (just a few hundred degrees colder!). As a 
-  bonus, you get striking views of the Rings of Saturn.
+        <h1>Titan</h1>
+        <p>
+          The only moon known to have a dense atmosphere other than Earth, Titan 
+          is a home away from home (just a few hundred degrees colder!). As a 
+          bonus, you get striking views of the Rings of Saturn.
+        </p>
 
-  Avg. distance
-  1.6 bil. km
-
-  Est. travel time
-  7 years
-</body>
+        <div>
+          <div>Avg. distance 1.6 bil. km</div>
+          <div>Est. travel time 7 years</div>
+        </div>
+      </article>
+    </section>
+  </body>
 </html>

@@ -1,0 +1,8 @@
+.main-section{
+    display: flex;
+}
+
+.description-container{
+    display: grid;
+    justify-content: space-around;
+}
