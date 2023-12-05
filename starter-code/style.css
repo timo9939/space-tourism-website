@@ -39,6 +39,10 @@ left: 5vw;
     justify-content: space-between;
 }
 
+.mobile-nav-toggle{
+    display: none;
+}
+
 nav{
     background-color: rgba(128, 128, 128, 0.6620);
     display: flex; 
@@ -140,6 +144,7 @@ footer{
 
 
 nav ul{
+
     position: fixed;
     inset: 0% 0% 0px 30%;
     flex-direction: column;
@@ -149,6 +154,13 @@ nav ul{
     background-color: rgba(250, 63, 63, 0.342);
     /* backdrop-filter: blur(1rem); */
     z-index: 3;
+
+    transform: translateX(100%);
+}
+
+nav ul[data-visible=true]{
+    transform: translateX(0%);
+    transition: transform 300ms ease-out;
 }
 
 @supports (backdrop-filter: blur(1rem)){
@@ -158,5 +170,21 @@ nav ul{
 
     }
 }
+/*  */
+/* Display the mobile-nav */
+.mobile-nav-toggle{
+    position: absolute;
+    border: 0;
+    
+    background:url(./assets/shared/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    
+    display: block;
+
+    width: 3em;
+    aspect-ratio: 1/1;
+    
+    z-index: 4;
+    }
 }
 

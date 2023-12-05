@@ -32,4 +32,7 @@ nav ul{
 ```
 By defining the max-width of the screen, shrinking the nav-bar to a column design and make the nav-bar background become semi-transparent
 
+<br>
+
+### 3. Displaying navbar for mobile version
 
