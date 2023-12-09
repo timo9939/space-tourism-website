@@ -156,11 +156,13 @@ nav ul{
     transform: translateX(100%);
 }
 
+/* Open Mobile nav and ease out effect   */
 nav ul[data-visible=true]{
     transform: translateX(0%);
     transition: transform 300ms ease-out;
 }
 
+/* Close Mobile nav and ease out effect   */
 nav ul[data-visible=false]{
     transform: translateX(100%);
     transition: transform 300ms ease-out;
@@ -173,7 +175,7 @@ nav ul[data-visible=false]{
 
     }
 }
-/*  */
+
 /* Display the mobile-nav */
 .mobile-nav-toggle{
     position: absolute;
@@ -189,5 +191,9 @@ nav ul[data-visible=false]{
     
     z-index: 4;
     }
+
+.mobile-nav-toggle[aria-expanded="true"]{
+background-image: url(./assets/shared/icon-close.svg);
+}
 }
 
