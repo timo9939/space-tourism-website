@@ -127,8 +127,6 @@ margin-bottom: 5vh;
     color: black;
     font-size: 50px;
     border-radius: 50%;
-
-
 }
 
 
@@ -160,6 +158,11 @@ nav ul{
 
 nav ul[data-visible=true]{
     transform: translateX(0%);
+    transition: transform 300ms ease-out;
+}
+
+nav ul[data-visible=false]{
+    transform: translateX(100%);
     transition: transform 300ms ease-out;
 }
 
